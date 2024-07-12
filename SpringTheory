@@ -2,3 +2,13 @@
 ** Dependecy Injection: implements IoC(Inversion of control) : refer https://medium.com/edureka/what-is-dependency-injection-5006b53af782
      -- dependency - @component (eg Class A)
         created bean in starter class as context.getBean(A.class);
+
+** @RequestParam -    Can be optional too
+    Default value it may take
+    takes URL query params
+  eg:  /users/id?10
+
+** @PathVariable
+@GetMapping("/users/{id}")
+public ResponseEntity<User> getUserById(@PathVariable("id") Long userId)
+    
