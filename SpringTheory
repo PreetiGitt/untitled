@@ -2,6 +2,8 @@
 ** Dependecy Injection: implements IoC(Inversion of control) : refer https://medium.com/edureka/what-is-dependency-injection-5006b53af782
      -- dependency - @component (eg Class A)
         created bean in starter class as context.getBean(A.class);
+   
+  Types of DI: Constructor based, setters based, variable based
 
 ** @RequestParam -    Can be optional too
     Default value it may take
@@ -11,4 +13,30 @@
 ** @PathVariable
 @GetMapping("/users/{id}")
 public ResponseEntity<User> getUserById(@PathVariable("id") Long userId)
-    
+
+** @RestController= @controller+ @ResponseBody
+
+** Bean and its Scope:  A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container
+1.singleton- the container creates a single instance of that bean;
+         all requests for that bean name will return the same object : default is singleton only.
+2.prototype - new instance as per request
+3.request
+4.session
+5.application
+6.websocket
+   3,4,5,6 are for web aware applications.
+
+
+** @Bean vs. @Component
+
+@Component and @Bean do two quite different things, and shouldn't be confused.
+
+@Component (and @Service and @Repository) are used to auto-detect and auto-configure beans using classpath scanning. 
+There's an implicit one-to-one mapping between the annotated class and the bean (i.e. one bean per class). 
+Control of wiring is quite limited with this approach, since it's purely declarative.
+
+@Bean is used to explicitly declare a single bean, rather than letting Spring do it automatically as above.
+It decouples the declaration of the bean from the class definition, and lets you create and configure beans exactly how you choose.
+
+
+** @Transactional
