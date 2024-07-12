@@ -1,2 +1,4 @@
-Dependecy Injection: implements IoC(Inversion of control)
-   
+** Ioc- design principle to invert flow of control-- Controlling of Java objects and their lifecycle is not done by the developers, hence the name Inversion Of Control.
+** Dependecy Injection: implements IoC(Inversion of control) : refer https://medium.com/edureka/what-is-dependency-injection-5006b53af782
+     -- dependency - @component (eg Class A)
+        created bean in starter class as context.getBean(A.class);
