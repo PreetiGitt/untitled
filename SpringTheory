@@ -39,4 +39,16 @@ Control of wiring is quite limited with this approach, since it's purely declara
 It decouples the declaration of the bean from the class definition, and lets you create and configure beans exactly how you choose.
 
 
-** @Transactional
+** @Transactional--
+   rollback happens for runtime, unchecked exceptions only. The checked exception does not trigger a rollback of the transaction. 
+We can, of course, configure this behavior with the rollbackFor and noRollbackFor annotation parameters.
+
+ eg: @Transactional(rollbackFor = MyCheckedException.class)
+    public void foo() {
+
+**@Scheduled(fixedDelay = 1000) -- Cron jobs
+
+** @SpringBootApplication 
+•	@EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism
+•	@ComponentScan: enable @Component scan on the package where the application is located.
+•	@Configuration: allow to register extra beans in the context or import additional configuration classes
