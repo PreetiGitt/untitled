@@ -1,0 +1,4 @@
+Bring your own license (BYOL)-Dedicated host
+ASGs- can scale Within Region, diff AZs
+Security groups are stateful—if you send a request from your instance, the response traffic for that request is allowed to flow in regardless of inbound security group rules.
+For VPC security groups, this also means that responses to allowed inbound traffic are allowed to flow out, regardless of outbound rules. 
