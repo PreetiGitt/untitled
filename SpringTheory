@@ -56,3 +56,8 @@ We can, of course, configure this behavior with the rollbackFor and noRollbackFo
 
 
 ** ModelMapper- maaping between inetrnal entities and extrenal DTOs
+
+** @transient- in @entity doent allow that value to persist in DB. There are certain fields or properties in an entity that should be ignored during the data persistence process such as the data which is being calculated for displaying, temporary variables, 
+and other data which is relevant only within the application logic but is not required in the database
+
+**spring.jpa.hibernate.ddl-auto=create(schema recretaed everytime app restarts, previous data is lost), validate,update(avoids data loss), create drop
