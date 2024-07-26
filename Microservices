@@ -1,1 +1,22 @@
 RestTemplate
+
+**Kafka (Producer Kafka template KafkaTemplate<String, String>, 
+            Cosnumer -@KafkaListener(topics = "NewTopic", 
+                   groupId = "group_id") 
+   -- Apache Kafka is a  open source distributed streaming platform that allows for publishing, 
+       subscribing to, storing, and processing streams of records in real-time
+    -- pub sub model, high throughput , more efficinet, scalable
+    --Kafka consumers, however, are more proactive in reading and tracking informatio
+
+** RabbitMq
+    The consumer application takes a passive role and waits for the RabbitMQ broker to PUSH the message into the queue.
+A RabbitMQ broker allows for low latency and complex message distributions with the following components:
+1.An exchange-- receives messages from the producer and determines where they should be routed to
+2.A queue -- is storage that receives messages from an exchange and sends them to consumers
+3.A binding --is a path that connects an exchange and a broker
+In RabbitMQ, a routing key is a message attribute that is used to route messages from an exchange to a specific queue.
+When a producer sends a message to an exchange, it includes a routing key as part of the message. 
+The exchange then uses this routing key to determine which queue the message should be delivered to.
+
+A RabbitMQ broker routes the message to the destination queue. 
+Once read, the consumer sends an acknowledgement (ACK) reply to the broker, which then deletes the message from the queue.
