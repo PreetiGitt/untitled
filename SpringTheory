@@ -37,6 +37,8 @@ Control of wiring is quite limited with this approach, since it's purely declara
 
 @Bean is used to explicitly declare a single bean, rather than letting Spring do it automatically as above.
 It decouples the declaration of the bean from the class definition, and lets you create and configure beans exactly how you choose.
+@Bean annotation is used to indicate that a method instantiates, configures, 
+and initializes a new object to be managed by the Spring IoC container. mostly third-party objects like RabbitMqTemplate, KafkaTemplate
 
 
 ** @Transactional--
