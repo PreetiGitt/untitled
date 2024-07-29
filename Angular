@@ -1,2 +1,3 @@
  ng new ProjectName- to create project
-mg server - to run project
+  ng serve - to run project
+npm config set fund false - to avoid npm fund issue
