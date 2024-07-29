@@ -14,4 +14,13 @@
       
     }
 
--------------
+------------- Finding Frequncy---------
+List;
+Map<String, Integer> map= new Hashmap<>();
+ for (String s:list){
+   if map.containskey(s) {
+    map.put(s, map.getValue(s)+1);
+   else
+    map.put(s,1);
+}
+}
