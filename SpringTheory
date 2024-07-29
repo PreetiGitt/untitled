@@ -63,3 +63,18 @@ We can, of course, configure this behavior with the rollbackFor and noRollbackFo
 and other data which is relevant only within the application logic but is not required in the database
 
 **spring.jpa.hibernate.ddl-auto=create(schema recretaed everytime app restarts, previous data is lost), validate,update(avoids data loss), create drop
+
+
+**@websecurity: WebSecurityConfigurerAdapter Class
+ protected void configure(HttpSecurity http)
+        throws Exception
+    {
+           http.authorizeRequests()
+            .antMatchers("/basic")
+            .hasAnyRole("BASIC", "ADMIN")
+            .antMatchers("/admin")
+            .hasRole("ADMIN")
+            .antMatchers("/")
+            .permitAll()
+            .anyRequest()
+            .authenticated()
