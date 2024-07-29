@@ -78,3 +78,6 @@ and other data which is relevant only within the application logic but is not re
             .permitAll()
             .anyRequest()
             .authenticated()
+
+
+**@lazy - lazy initialiasation of bean. Generally object comes up as the project builds, with Lazy it will come on its first call.
