@@ -1,0 +1,17 @@
+--------------------Binary Search:
+
+     int binarySearch(int [] arr, int toFind){
+      int low=0, high= arr.length-1;
+      while(low<high){
+              mid=low+high/2;
+            if (arr[mid]== toFind)
+            return mid;
+  
+        if(toFind>arr[mid])
+           low=mid+1;
+        else
+            high=mid-1;  }
+      
+    }
+
+-------------
