@@ -20,3 +20,21 @@ The exchange then uses this routing key to determine which queue the message sho
 
 A RabbitMQ broker routes the message to the destination queue. 
 Once read, the consumer sends an acknowledgement (ACK) reply to the broker, which then deletes the message from the queue.
+
+
+Microservices:Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined API
+        scalable, resilient, agile, resusable code, ease in deployment.
+**SpringConfig: is implemented in client-server model.
+
+      1. For Server :create SpringConfig server with maven dependency : @EnableConfigServer
+               spring.cloud.config.server.git.uri=ssh://localhost/config-repo
+              spring.cloud.config.server.git.clone-on-start=true
+      2. For Client: 
+            spring.application.name=config-client
+            spring.profiles.active=development
+            spring.config.import=optional:configserver:serverURL
+
+**SpringDiscovery:
+
+**SpringAPIGateway:
+
