@@ -24,3 +24,9 @@ Map<String, Integer> map= new Hashmap<>();
     map.put(s,1);
 }
 }
+---------swap two numbers without using 3rd variable-----
+
+a=a+b;
+b=a-b ; a=a-b;
+-------------
+
