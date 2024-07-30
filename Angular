@@ -1,8 +1,11 @@
  ng new ProjectName- to create project
   ng serve - to run project
+  ng g service <name> - to create a service
 npm config set fund false - to avoid npm fund issue
  ng g component <name> - create component name
 ng add @angular/material - for adding and using angular material
+tailwind with anular command can also be used
+
 
 
 **Angular is component based architecture for UI development, 
