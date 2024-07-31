@@ -102,8 +102,27 @@ static boolean sentencePalindrome(String s)
 
 ------------- Delete Linked list mid node------
 
+1. Count nodes
+2. make  mid-1 node to point mid+1, instead of mid 
 
+  int nodeCount(){
+      int cout=0;
+      while (head!=null){
+          count++;
+           head=head.next;
+    }
 
+   }
+   delete midNode(){
+   int mid= nodeCount()/2;
+   while (mid>1){
+     head=head.next
+      mid--;
+     }
+    head.next=head.next.next;
+}
+
+----------------------------
 
 
 
