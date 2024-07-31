@@ -89,15 +89,15 @@ static boolean sentencePalindrome(String s)
 
       while(curr!=null){
 
-          head=head.node;   //
-          curr.node=prev;//
+          head=head.next;   //
+          curr.next=prev;//
           prev=curr;
           curr=head;
       }
       head=prev;
         while(head!=null){
             System.out.println(head.val);
-                head=head.node;
+                head=head.next;
         }
 
 ------------- Delete Linked list mid node------
