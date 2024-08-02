@@ -8,7 +8,8 @@ RestTemplate
     -- pub sub model, high throughput , more efficinet, scalable
     --Kafka consumers, however, are more proactive in reading and tracking informatio
 
-** RabbitMq
+** RabbitMq:
+       @EnableRabbit in SpringBoot main class
     The consumer application takes a passive role and waits for the RabbitMQ broker to PUSH the message into the queue.
 A RabbitMQ broker allows for low latency and complex message distributions with the following components:
 1.An exchange-- receives messages from the producer and determines where they should be routed to
