@@ -12,6 +12,8 @@
 
 **SpringBoot starter dependencies- web, test , thymeleaf,JPA
 
+**StarterClass @SpringBootApplication- has main method which has run() which returns ApplicationContext type .which is used to create bean
+
 **To exclude a config -- @EnableAutoConfiguration(exclude={ABC.class})
 
 ** @PropertySource("classpath:ABC.properties").. can read the values with @value 
