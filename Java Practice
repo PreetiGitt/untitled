@@ -106,7 +106,7 @@ static boolean sentencePalindrome(String s)
 2. make  mid-1 node to point mid+1, instead of mid 
 
   int nodeCount(){
-      int cout=0;
+      int count=0;
       while (head!=null){
           count++;
            head=head.next;
@@ -122,7 +122,22 @@ static boolean sentencePalindrome(String s)
     head.next=head.next.next;
 }
 
-----------------------------
+---------------------------- Find middle node in linked list--------
+logic:
+2 pointers- 2nd stepping double of first. so 2nd reaches the last while first covers half
+
+Node slow, fast, midNode;
+slow=fast=head;
+
+while(fast.next!=null && fast.next.next!=null) // checks for both even or odd numbered list
+{
+slow=slow.next;
+fast=fast.next.next;
+  
+}
+midNode=slow;
+
+------------------------------------------------------
 
 
 
