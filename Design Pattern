@@ -1,0 +1,62 @@
+
+Creational:
+      1.Singleton
+      2.Factory
+    
+    
+    
+      3.Builder Pattern- building a complex object with as many as fields we want to be included or excluded
+         Approach: build a static inner class which will set param to User class constuctor as per demand
+
+                               public class User {                  ||||||||  in main
+                            int a;                                  ||||||||   User obj= new User.Builder().setA(10).setB(20).build();
+                                                                                      System.out.println(obj.getA()+":"+obj.getB());
+                            int b;
+                            String c;
+                            public int getUser() {
+                                return a;
+                            }
+                        
+                            public int getUser() {
+                                return b;
+                            }
+                        
+                            public String getUser() {
+                                return c;
+                            }
+                        
+                        
+                            User(Builder obj){
+                              this.a=obj.a;
+                                this.b=obj.b;
+                                this.c=obj.c;
+                            }
+                            static  class Builder{
+                                public Builder setA(int a) {
+                                    this.a = a;
+                                    return this;
+                                }
+                                           /*  public Buider getInstance(){
+                                        return this;
+                                             }*/
+                                public Builder setB(int b) {
+                                    this.b = b;
+                                    return this;
+                                }
+                        
+                                public Builder setC(String c) {
+                                    this.c = c;
+                                    return this;
+                                }
+                        
+                        
+                                int a;
+                                int b;
+                                String c;
+                               public User build(){
+                                   User obj=new User(this);
+                                     return obj;
+                                }
+                            }
+                        }
+
