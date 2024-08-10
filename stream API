@@ -1,0 +1,11 @@
+list.stream().sorted().collect(Collectors.toList())   //Asc
+list.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()) //Dsc
+
+--------------
+For objects:
+List<Employee>  empList;
+
+empList.stream().sort(Comparator.comparing(Employee::getSalary)).collect(Collectors.toList())  // sorted by salary
+
+Optional<Employee> emp = empList.stream()
+        .sorted(Comparator.comparing(Employee::getSalary).reversed()).skip(1).findFirst();// 2nd  Highest salary
