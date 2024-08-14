@@ -9,3 +9,9 @@ empList.stream().sort(Comparator.comparing(Employee::getSalary)).collect(Collect
 
 Optional<Employee> emp = empList.stream()
         .sorted(Comparator.comparing(Employee::getSalary).reversed()).skip(1).findFirst();// 2nd  Highest salary
+
+
+-- sort by some field:
+ map =empList.stream().
+                sorted(Comparator.comparing(Employee::getAge).reversed()).
+                collect(Collectors.groupingBy(Employee::getDepartment));
