@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4f862ba-87fc-46d3-9ed6-0ff2013330bd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../08-02-2022/08-02-2022.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19thFeb/19thFeb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19thFeb/src/out/production/19thFeb/19thFeb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20thfeb_assG/20thfeb_assG.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A/A.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABC/ABC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Inheritance/Inheritance.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interface/Interface.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OracleJDBC/OracleJDBC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhantomRef/PhantomRef.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/Practice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apple/apple.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codePractice/codePractice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../com.threading/com.threading.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coreJava/coreJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dsa/dsa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dsaSorting/dsaSorting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../importJar/importJar.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedListPractice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/linkedListPractice/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/linkedListPractice/RotateLL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RotateLL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multiThreading/multiThreading.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice1/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice1/streamProblems.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servletclasses" beforeDir="false" afterPath="$PROJECT_DIR$/../servletclasses" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stringHandling/stringHandling.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swingInnerClass/swingInnerClass.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/untitled1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/untitled2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled3/GCReferenceTypes.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2kPXDXQ3fYBFtErilfBar9ayEwu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="RotateLL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RotateLL" />
+      <module name="linkedListPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RotateLL" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4f862ba-87fc-46d3-9ed6-0ff2013330bd" name="Changes" comment="" />
+      <created>1723186072163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723186072163</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
