@@ -1,1 +1,2 @@
-
+ ** ACID stands for Atomicity, Consistency, Isolation, and Durability.
+    Durability guarantees that once the transaction completes and changes are written to the database, they are persisted.
