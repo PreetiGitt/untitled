@@ -87,3 +87,7 @@
 *****Behavioural
   1. Observer Design Pattern is a behavioral design pattern that defines a one-to-many dependency between objects 
     so that when one object (the subject) changes state, all its dependents (observers) are notified and updated automatically.
+
+  2. Strategy Design Pattern : The Strategy Design Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable,
+  allowing clients to switch algorithms dynamically without altering the code structure.
+    eg: Set Interface -> can use HashSet or TreeSet
