@@ -1,2 +1,30 @@
  ** ACID stands for Atomicity, Consistency, Isolation, and Durability.
     Durability guarantees that once the transaction completes and changes are written to the database, they are persisted.
+
+**DDL- CATD-> create , Alter, Truncate, Drop
+  DML-UID-> update,insert, delete
+
+
+•	Nth highest: 
+SELECT salary 
+FROM employee 
+ORDER BY salary desc limit n-1,1
+Limit offset (rows to ignore), rows to print
+Eg: 2nd highest – ignore first row the highest, and print one row.
+
+•	Today’ Date:
+SELECT GETDATE();
+
+•	Joins:
+Inner Join= Common
+Left/Right= Common +left/right
+Cross = total-> common+left+right
+
+ eg: SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+•	Oreder by multiple column:
+SELECT * FROM Customers ORDER BY Country, CustomerName;        
+ This means that it orders by Country, but if some rows have the same Country,      it orders them by CustomerName
+  
+      
+
