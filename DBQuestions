@@ -4,6 +4,9 @@
 **DDL- CATD-> create , Alter, Truncate, Drop
   DML-UID-> update,insert, delete
 
+**  Primary vs. Foreign Key
+unique & not-NULL || can be NULL 
+single            ||Multiple foreign keys can exist within a table, depending on the relationships with other tables.
 
 •	Nth highest: 
 SELECT salary 
