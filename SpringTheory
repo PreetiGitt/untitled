@@ -3,6 +3,19 @@
 **GET, PUT, DELETE are idempotent methods, 
 meaning they are safe to be retried or executed multiple times without causing unintended side effects. In contrast, POST and PATCH are NOT Idempotent
 
+**Error Response:
+  200 OK
+  201-created
+  3xx- redirection
+  400-bad req.
+  401- unauthorised
+  402- payment needed
+  403-forbidden
+  405- incomaptible methods
+  503- service unavailable
+  502-bad gateway
+  504 -gateway timeout
+
 **@SpringBootApplication Annotation. This annotation is used to mark the main class of a Spring Boot application. 
                               @SpringBootConfiguration, @EnableAutoConfiguration, and @ComponentScan
 
