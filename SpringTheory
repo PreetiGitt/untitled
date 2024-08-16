@@ -12,6 +12,8 @@ meaning they are safe to be retried or executed multiple times without causing u
   402- payment needed
   403-forbidden
   405- incomaptible methods
+
+  501- method not impelemented
   503- service unavailable
   502-bad gateway
   504 -gateway timeout
