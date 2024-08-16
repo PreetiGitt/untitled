@@ -1,5 +1,8 @@
 **SpringBoot over Spring
 
+**GET, PUT, DELETE are idempotent methods, 
+meaning they are safe to be retried or executed multiple times without causing unintended side effects. In contrast, POST and PATCH are NOT Idempotent
+
 **@SpringBootApplication Annotation. This annotation is used to mark the main class of a Spring Boot application. 
                               @SpringBootConfiguration, @EnableAutoConfiguration, and @ComponentScan
 
