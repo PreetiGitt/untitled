@@ -15,3 +15,6 @@ Optional<Employee> emp = empList.stream()
  map =empList.stream().
                 sorted(Comparator.comparing(Employee::getAge).reversed()).
                 collect(Collectors.groupingBy(Employee::getDepartment));
+
+----filter then sort:
+list= empList.stream().filter(e->e.getSalary()>70000).sorted(Comparator.comparing(Employee::getName)).collect(Collectors.toList())
