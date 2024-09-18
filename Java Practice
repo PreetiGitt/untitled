@@ -95,6 +95,10 @@ for (String word : wordsList) {
 
 System.out.println(duplicateWords);
 
+--------------Find non-duplicates-----------
+Set<Integer> targetSet = sourceList.stream().collect(Collectors.toSet());
+
+
 -------------- Reverse a Linked List----------
 
  Node n1=new Node(3);
