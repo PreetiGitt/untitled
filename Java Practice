@@ -69,6 +69,31 @@ static boolean sentencePalindrome(String s)
         }
         return string.equals(reverse);
     }
+----------------Find duplicates---------------
+
+List<String> wordsList = Arrays.stream(sentence.split(" ")).collect(Collectors.toList());
+
+Set<String> tempSet = new HashSet<>();
+
+List<String> duplicateWords = wordsList.stream()
+    .filter(w -> !tempSet.add(w))
+    .collect(Collectors.toList());
+
+System.out.println(duplicateWords); 
+
+ORRR----
+
+List<String> wordsList = Arrays.asList(sentence.split(" "));
+Set<String> tempSet = new HashSet<>();
+List<String> duplicateWords = new ArrayList<>();
+
+for (String word : wordsList) {
+  if (!tempSet.add(word)) {
+    duplicateWords.add(word);
+  }
+}
+
+System.out.println(duplicateWords);
 
 -------------- Reverse a Linked List----------
 
