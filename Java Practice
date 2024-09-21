@@ -99,6 +99,12 @@ System.out.println(duplicateWords);
 Set<Integer> targetSet = sourceList.stream().collect(Collectors.toSet());
 
 
+------------- Comut max element--------
+
+int maxValue= Collections.max(list);
+ int freq= Collections.frequency(list, maxValue);
+
+
 -------------- Reverse a Linked List----------
 
  Node n1=new Node(3);
