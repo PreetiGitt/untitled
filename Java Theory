@@ -4,3 +4,25 @@ JDK11 feature:
 
 Copy Constructor-
 
+-------------------------------
+Immmutabilty in JAVA :
+ 1. Make your class final - 
+ 2. Make all the fields private and final 
+ 3. Don't provide any methods that change the state of your instance -readOnly or getter methods
+ 4. If you have mutable fields in your class, like List, or Date, making them final won't suffice. You should return a defensive copy from their getters, so that their state isn't mutated by calling methods.
+For the 4th point, say you have a Date field in your class, then the getter for that field should look like:
+
+public Date getDate() {
+    return new Date(this.date.getTime());
+}
+Making a defensive copy can become a headache, when your mutable field itself comprises of some mutable field, and that in turn can contain some other mutable field. In that case, you would need to make copy of each of them iteratively. We name this iterative copy of mutable fields as Deep Copy.
+
+Implementing deep copy by yourself may be cumbersome. But,keeping that issue apart, you should consider your class design again,
+---------------------------------------
+JDK 8:
+ Functional interface types:
+  1. Consumer : void consume (T t)
+  2.Predicate : boolean apply (T t)
+  3. Function : R apply (T t)
+  4. Supplier : R apply()
+
