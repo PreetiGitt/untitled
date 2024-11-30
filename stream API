@@ -1,3 +1,9 @@
+Theory:
+1. Map vs flatmap
+2. Parallel Streams
+3. Sateful vs stateless
+
+--------
 list.stream().sorted().collect(Collectors.toList())   //Asc
 list.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()) //Dsc
 
