@@ -91,3 +91,7 @@
   2. Strategy Design Pattern : The Strategy Design Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable,
   allowing clients to switch algorithms dynamically without altering the code structure.
     eg: Set Interface -> can use HashSet or TreeSet
+
+  3. Memento Design pattern: to save and restore the previous state
+
+  4. Chain of Responsibility: implements loose coulping and single responsibilty, define how a request pass thru a chain of objecst
