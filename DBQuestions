@@ -25,12 +25,13 @@ Cross = total-> common+left+right
 
  eg: SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 
-•	Oreder by multiple column:
+•	Order by multiple column:
 SELECT * FROM Customers ORDER BY Country, CustomerName;        
  This means that it orders by Country, but if some rows have the same Country,      it orders them by CustomerName
 
 
-*    Delete duplicate records
+*    Find duplicate records
+    SELECT * FROM  users GROUP BY name, email HAVING COUNT(*) > 1
   
       
 
