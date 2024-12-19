@@ -1,4 +1,8 @@
-RestTemplate
+-----How Microservices communicate 
+     1. RestTemplate
+
+
+-----------
 
 **Kafka (Producer Kafka template KafkaTemplate<String, String>, 
             Cosnumer -@KafkaListener(topics = "NewTopic", 
