@@ -40,3 +40,13 @@ Integer var = list.stream().max(Integer::compare).get();
   Map<Boolean, List<Integer> > 
             map = list.stream().collect(Collectors.partitioningBy(num -> num > 3)); 
 
+-------- Sum of squares of even numbers
+   Arrays.stream(array)
+                .filter(n -> n % 2 == 0)         // Filter even numbers
+                .map(n -> n * n)                 // Square each even number
+                .sum(); 
+----------IntStream 
+   IntStream.range(1, 10)
+          .filter(n -> n % 2 == 0)
+          .forEach(System.out::println);
+
