@@ -1,3 +1,19 @@
-Spring Vs SpringBoot
-Collection F/W hierarachy
- Hahmap, hashset, treemap
+--Spring Vs SpringBoot-> starter Parent dependency, in-memory DB, embeeded servers tomcat n jetty.
+--Collection F/W hierarachy
+    Set, Queue, List
+    Map <- HahMap
+--Hashmap, hashset, treemap
+
+--Kafka
+   Consumer grp
+   Topic, Partition ,offset (like an index of partition)
+
+
+
+-- Rabbitmq
+   Exchange -In RabbitMQ, an exchange is a message routing agent that determines how messages are sent to queues. 
+    The type of exchange determines how a message is routed. There are four main types of exchanges in RabbitMQ: 
+        Direct: Routes messages to queues based on an exact routing key match 
+        Fanout: Broadcasts messages to all bound queues 
+
+
