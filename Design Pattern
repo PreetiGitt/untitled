@@ -78,7 +78,7 @@
                                               }
                                           }
 ****Structural:
-   1. Adapetr Design Pattern
+   1. Adapter Design Pattern
 
 
 
@@ -94,4 +94,6 @@
 
   3. Memento Design pattern: to save and restore the previous state
 
-  4. Chain of Responsibility: implements loose coulping and single responsibilty, define how a request pass thru a chain of objecst
+  4. Chain of Responsibility: implements loose-coulping and single responsibilty, define how a request pass thru a chain of objects
+
+  5. State Change: different behaviour as per state 
