@@ -128,6 +128,9 @@ and other data which is relevant only within the application logic but is not re
 **to avoid a child being deleted if Parent is deleted ---@OneToMany(mappedBy="foo", orphanRemoval=false)
 ** CASCADEType
 
+---------------- API versioning:
+
+
 
 
 
