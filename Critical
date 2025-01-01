@@ -4,6 +4,11 @@
     Map <- HahMap
 --Hashmap, hashset, treemap
 
+
+---ArrayList vs Linkedlist
+ AL stores one type of data,  Storing and accessing the data is -> better in AL, Implements List Interface
+ LL stores any type of data,  Manipulation/Deletion of data -> LL as AL needs bit shifting, Implememts List and Dequeue Interface
+
 --Kafka
    Consumer grp
    Topic, Partition ,offset (like an index of partition)
