@@ -1,20 +1,9 @@
 --Spring Vs SpringBoot-> starter Parent dependency, in-memory DB, embeeded servers tomcat n jetty.
---Collection F/W hierarachy
-    Set, Queue, List
-    Map <- HahMap
---Hashmap, hashset, treemap
-
-
----ArrayList vs Linkedlist
- AL stores one type of data,  Storing and accessing the data is -> better in AL, Implements List Interface
- LL stores any type of data,  Manipulation/Deletion of data -> LL as AL needs bit shifting, Implememts List and Dequeue Interface
 
 --Kafka
    Consumer grp
    Topic, Partition ,offset (like an index of partition)
 
-----Java 8 Interface Default methods Diamond Problem 
-     implementing class must reimplement method else compilation error.
 
 -- Rabbitmq
    Exchange -In RabbitMQ, an exchange is a message routing agent that determines how messages are sent to queues. 
