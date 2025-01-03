@@ -8,6 +8,8 @@ which may pass the state from previously processed elements to the processing of
  Statefulness can impact the parallelization and performance of stream operations.
 4. Parallel Streams
 --------
+Infinite Stream:
+---------
 list.stream().sorted().collect(Collectors.toList())   //Asc
 list.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()) //Dsc
 
