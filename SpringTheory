@@ -45,7 +45,7 @@ meaning they are safe to be retried or executed multiple times without causing u
    
   Types of DI: Constructor based, setters based, variable based
 
-** @RequestParam -    Can be optional too
+** @RequestParam -   , for mutiple params, Can be optional too
     Default value it may take
     takes URL query params
   eg:  /users/id?10
