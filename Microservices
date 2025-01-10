@@ -3,6 +3,11 @@
 
 
 -----------
+**Architecture Pattern
+  1. Event Driven
+  2. Saga
+  3. Aggregator
+  4. Circuit breaker
 
 **Kafka (Producer Kafka template KafkaTemplate<String, String>, 
             Cosnumer -@KafkaListener(topics = "NewTopic", 
@@ -42,4 +47,6 @@ Microservices:Microservices are an architectural and organizational approach to 
 **SpringDiscovery:
 
 **SpringAPIGateway:
+
+
 
