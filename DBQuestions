@@ -1,6 +1,14 @@
  ** ACID stands for Atomicity, Consistency, Isolation, and Durability.
     Durability guarantees that once the transaction completes and changes are written to the database, they are persisted.
 
+**Transaction Isolation in DB:
+  1. Read Uncommited: allows dirty reads
+  2. Read Commited 
+  3. Repeatable read : row which is read is blocked for update(transaction that reads data 
+                from a row blocks any other writing transactions from accessing the same row)
+  4. Serializable : whole table is blocked while read.
+
+
 **DDL- CATD-> create , Alter, Truncate, Drop
   DML-UID-> update,insert, delete
 
