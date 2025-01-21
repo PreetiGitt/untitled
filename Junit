@@ -6,10 +6,10 @@ Junit 5:
 @InjectMock creates an instance of the class and injects the mocks that are marked with the annotations @Mock into it.
 For example
 
- eg:     @Mock
+ eg:     @Mock // annotation for depedencies
       StudentDao studentDao;
       
-      @InjectMocks
+      @InjectMocks // Annotation for the class to be tested
       StudentService service;
 
 @Test, @Test(Timeout=), @Test(expected = IndexOutOfBoundsException.class)
