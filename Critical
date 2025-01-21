@@ -1,3 +1,5 @@
+-- API Versioning- a transparent way for API changes
+  URL based, header based , Query param based
 --Spring Vs SpringBoot-> starter Parent dependency, in-memory DB, embeeded servers tomcat n jetty.
 
 --Kafka
