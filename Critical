@@ -6,6 +6,8 @@ Add Spring Security Starter Dependency i.e. spring-boot-starter-security to pom.
 Extend WebSecurityConfigureAdapter in a custom class and use @EnableWebSecurity annotation.
 Override configure(HttpSecurity) method to specify security rules.
 
+
+--- DB Connection Pooling:
 --- API Proxy:
 
 --Spring Vs SpringBoot-> starter Parent dependency, in-memory DB, embeeded servers tomcat n jetty.
