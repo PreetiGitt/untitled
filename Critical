@@ -7,7 +7,8 @@ Extend WebSecurityConfigureAdapter in a custom class and use @EnableWebSecurity 
 Override configure(HttpSecurity) method to specify security rules.
 
 
---- DB Connection Pooling:
+--- DB Connection Pooling- a technique that reduces the number of times a connection to a database needs to be opened. 
+It involves keeping a pool of open connections that can be reused by applications. HikariCP, Apache Commons DBCP, C3PO
 --- API Proxy:
 
 --Spring Vs SpringBoot-> starter Parent dependency, in-memory DB, embeeded servers tomcat n jetty.
