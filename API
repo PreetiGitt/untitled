@@ -64,5 +64,11 @@ For example
       StudentService service;
 
 
+Slice Testing: 
+  Testing slices of the application Sometimes you would like to test a simple “slice” of the application instead of auto-configuring the whole application. Spring Boot 1.4 introduces 4 new test annotations:
 
+@WebMvcTest - for testing the controller layer
+@JsonTest - for testing the JSON marshalling and unmarshalling
+@DataJpaTest - for testing the repository layer
+@RestClientTests - for testing REST clients
 
