@@ -1,1 +1,68 @@
+API:
+1.	API Versioning
+•	Good Practice to transparently incorporating API Changes
+•	Ways to do : URL, Header, Query param based
+2.	API Methods : Get, Put, Post, Patch, Delete
+Post vs PUT
+3.	API Idempotency :
+Idempotent API methods are methods that can be called multiple times without causing unintended side effects.
+ Non-Idempotent: POST  & Patch
+4.	API Error Code
+  200 OK
+  201-created
+  3xx- redirection
+  400-bad req.
+  401- unauthorised
+  402- payment needed
+  403-forbidden
+  405- incomaptible methods
+  501- method not impelemented
+  503- service unavailable
+  502-bad gateway
+  504 -gateway timeout
+
+5.	Controller Annotations
+ @RestController
+@RequestMapping("/Attendance")
+public class AttendanceController {
+	@Autowired 
+	AttendanceService service;
+	@PostMapping("/create")
+	APIResponse save(@RequestBody AttendanceReq data, HttpServletRequest req) throws Exception{
+	try {
+		 service.save(data);
+		APIResponse response = new APIResponse(1, "Attendance marked", data);
+		return response;
+	} catch (Exception e) {
+		APIResponse response = new APIResponse(0, "Error");
+		return response;
+	}
+}
+
+6.	API Testing:
+•	Unit Vs Slice Testing : While unit testing focuses on testing individual, isolated units of code, slice testing examines a specific "slice" or cross-section of an application, often including multiple components within a layer like the web layer or database layer, allowing for a more integrated test while still maintaining a focused scope compared to full integration testing;
+
+•	JUNIT & Mockito
+
+•	@Test: This annotation over a public method of void return type can be run as a test case. This is a replacement of the org.junit.TestCase annotation.
+•	@Before: This is used when we want to execute the preconditions or any initialisation based statements before running every test case.
+•	@BeforeClass: This is used when we want to execute statements before all test cases. The statements may include test connections, common setup initialisation etc.
+•	@After: This is used when we want to execute statements after each test case. The statements can be resetting the variables, deleting extra memory used etc.
+•	@AfterClass: This is used when certain statements are required to be executed after all the test cases of the class are run. Releasing resource connections post-execution of test cases is one such example.
+•	@Ignores: This is used when some statements are required to be ignored during the execution of test cases.
+•	@Test(timeout=x): This is used when some timeout during the execution of test cases is to be set. The value of x is an integer that represents the time within which the tests have to be completed.
+•	@Test(expected=NullPointerException.class): for Exceptions
+
+@Mock creates a mock implementation for the classes you need.
+@InjectMock creates an instance of the class and injects the mocks that are marked with the annotations @Mock into it.
+For example
+
+ eg:     @Mock // annotation for depedencies
+      StudentDao studentDao;
+      
+      @InjectMocks // Annotation for the class to be tested
+      StudentService service;
+
+
+
 
