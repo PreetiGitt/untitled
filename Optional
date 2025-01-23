@@ -1,1 +1,9 @@
+String str= "ABC";
+ Optional op= Optional.ofNullable(str);
+
+  1. isPresent()- if (op.isPresent()){ print("Not-Null");}
+
+  2. orElse()- op.orElse("Default Value");
+
+  3. orElseThrow() : op.orElseThrow(() -> new IllegalArgumentException("Name is absent"));
 
