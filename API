@@ -1,4 +1,4 @@
-API:
+	API:
 1.	API Versioning
 •	Good Practice to transparently incorporating API Changes
 •	Ways to do : URL, Header, Query param based
@@ -52,6 +52,9 @@ public class AttendanceController {
 •	@Ignores: This is used when some statements are required to be ignored during the execution of test cases.
 •	@Test(timeout=x): This is used when some timeout during the execution of test cases is to be set. The value of x is an integer that represents the time within which the tests have to be completed.
 •	@Test(expected=NullPointerException.class): for Exceptions
+
+	@mock vs @spy:	The difference is that in mock, you are creating a complete mock or fake object 
+		while in spy, there is the real object and you just spying or stubbing specific methods of it.
 
 @Mock creates a mock implementation for the classes you need.
 @InjectMock creates an instance of the class and injects the mocks that are marked with the annotations @Mock into it.
