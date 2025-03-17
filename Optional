@@ -7,3 +7,8 @@ String str= "ABC";
 
   3. orElseThrow() : op.orElseThrow(() -> new IllegalArgumentException("Name is absent"));
 
+ 4. Optional.of(foobar) 
+  as you will see a NullPointerException which will indicate that your program
+ vs Optional.ofNullable(foobar) -will see NullPointerException
+
+Optional.empty() : factory method to create an empty instance of optional.
