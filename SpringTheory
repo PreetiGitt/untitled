@@ -38,7 +38,7 @@
 public ResponseEntity<User> getUserById(@PathVariable("id") Long userId)
 
 ** @RestController= @controller+ @ResponseBody
-
+-------------------------
 ** Bean and its Scope:  A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container
 1.singleton- the container creates a single instance of that bean;
          all requests for that bean name will return the same object : default is singleton only.
@@ -48,8 +48,12 @@ public ResponseEntity<User> getUserById(@PathVariable("id") Long userId)
 5.application
 6.websocket
    3,4,5,6 are for web aware applications.
+Use Case: Singleton beans are suitable for stateless objects, shared resources, and scenarios where only one instance is needed throughout the application. 
+Examples include database connection pools, service classes, and DAO classes.
 
-
+Prototype scope is ideal for stateful beans or instances that hold temporary data and are expected to change frequently. 
+Examples include non-thread-safe classes or any component that requires new data on every use.
+-------------------------------------
 ** @Bean vs. @Component
 
 @Component and @Bean do two quite different things, and shouldn't be confused.
