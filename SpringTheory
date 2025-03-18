@@ -78,7 +78,8 @@ We can, of course, configure this behavior with the rollbackFor and noRollbackFo
 **@Scheduled(fixedDelay = 1000) -- Cron jobs
 
 ** @SpringBootApplication 
-•	@EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism
+•	@EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism - Spring Boot examines the classpath to identify dependencies and determine 
+which auto-configurations to apply
 •	@ComponentScan: enable @Component scan on the package where the application is located.
 •	@Configuration: allow to register extra beans in the context or import additional configuration classes
 
