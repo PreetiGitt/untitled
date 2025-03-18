@@ -1,4 +1,16 @@
- ** ACID stands for Atomicity, Consistency, Isolation, and Durability.
+-----
+1.cluster :
+ like primary key, good for sorting and range queries eg: rollno in student table
+- can have only one clustered index in a table.
+ non cluster index : Suitable for optimizing lookups and queries on non-primary columns. eg: name in student table
+ - can ahve more than one clustered index in table.
+
+2.In which index insert or update operation is faster
+
+3.What is normalization: to reduce redundancy and maintain atomicity.
+
+-----------
+** ACID stands for Atomicity, Consistency, Isolation, and Durability.
     Durability guarantees that once the transaction completes and changes are written to the database, they are persisted.
 
 **Transaction Isolation in DB:
