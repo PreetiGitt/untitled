@@ -1,4 +1,17 @@
+--------
 
+Future(Java 5): It is generally used with an ExecutorService, and we get a Future object when we submit tasks to the executor. 
+However, it doesn’t allow us to define any computation steps to be executed once the computation is finished. The get() method is blocking, which means it waits until the task is completed and can make the application less responsive.
+
+CompletableFuture (Java 8): It can be used as a Future and 
+also allows us to attach callbacks via methods like thenApply, thenAccept, and thenRun. These methods let us execute additional actions upon completion of the original task, in a non-blocking fashion. CompletableFuture can also be manually completed.
+
+Exception Handling
+Future: Does not provide a built-in mechanism for handling exceptions. Exception handling needs to be implemented externally. Exceptions are caught during the get() method call.
+
+CompletableFuture: Provides methods like exceptionally and handle to deal with exceptions in a chain of asynchronous tasks. 
+Allows defining a recovery or fallback mechanism within the computation chain.
+-------
 AOP (Aspect-Oriented Programming): A technique that allows you to inject cross-cutting concerns (such as logging) into your code without modifying it
 --------
 
