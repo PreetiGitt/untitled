@@ -1,0 +1,7 @@
+JPA vs Hibernate : hibernate is implementation of JPA
+
+Projections : 
+  Spring Data JPA allows us to use projections to retrieve a subset of data from the database. 
+  Projections allow us to select only specific fields from an entity or combine fields from multiple entities into a single DTO.
+
+Criteria API and Specification Interface in Data : to dynamically build queries.
