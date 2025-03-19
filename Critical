@@ -11,8 +11,39 @@ Override configure(HttpSecurity) method to specify security rules.
 It involves keeping a pool of open connections that can be reused by applications. HikariCP, Apache Commons DBCP, C3PO
 --- API Proxy:
 
---Spring Vs SpringBoot-> starter Parent dependency, in-memory DB, embeeded servers tomcat n jetty.
+--Spring Vs SpringBoot-> starter Parent dependency, in-memory DB such as H2, embeeded servers tomcat n jetty.
+   The most important feature of the Spring Boot is Autoconfiguration.
 
+----Multiple DB connections-
+ irst you have to set application.properties like this
+
+#Database
+database1.datasource.url=jdbc:mysql://localhost/testdb
+database1.datasource.username=root
+database1.datasource.password=root
+database1.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+database2.datasource.url=jdbc:mysql://localhost/testdb2
+database2.datasource.username=root
+database2.datasource.password=root
+database2.datasource.driver-class-name=com.mysql.jdbc.Driver
+Then define them as providers (@Bean) like this:
+
+@Bean(name = "datasource1")
+@ConfigurationProperties("database1.datasource")
+@Primary
+public DataSource dataSource(){
+    return DataSourceBuilder.create().build();
+}
+
+@Bean(name = "datasource2")
+@ConfigurationProperties("database2.datasource")
+public DataSource dataSource2(){
+    return DataSourceBuilder.create().build();
+}
+Note that I have @Bean(name="datasource1") and @Bean(name="datasource2"), 
+then you can use it when we need datasource as @Qualifier("datasource1") and @Qualifier("datasource2") ,    
+-----------------------------------------------
 --Kafka
    Consumer grp
    Topic, Partition ,offset (like an index of partition)
