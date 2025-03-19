@@ -1,6 +1,11 @@
-Git Squash
-Git Merge
-Git Rebase
-Git interactive Rebase
+Git Squash: merging multiple incremental commits into one
+Git Merge : merge changes
 
-Git branch strategies
+Git Rebase
+: rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge commits required by git merge. 
+Second, as you can see in the above diagram, rebasing also results in a perfectly linear project history
+-  rebasing loses the context provided by a merge commit—you can’t see when upstream changes were incorporated into the feature.
+Git interactive Rebase :
+ this is used to clean up a messy history before merging a feature branch into main.
+
+Git branch strategies : feature, release, master
