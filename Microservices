@@ -5,9 +5,15 @@
 -----------
 **Architecture Pattern
   1. Event Driven
-  2. Saga
-  3. Aggregator
+  2. Saga : It is an asynchronous and eventually consistent transactional approach, which is quite analogous to a typical microservices application architecture,
+where a distributed transaction is fulfilled by a set of asynchronous transactions on related microservices
+  3. Aggregator : Aggregator Design Pattern is a service that receives a request, then makes requests of multiple services,
+combines the results and responds to the initiating request.
+
+
   4. Circuit breaker
+  4. Proxy design pattern : So, the main idea behind this pattern is, not to expose each microservice to their consumers and
+instead it should go through an interface.
 
 **Kafka (Producer Kafka template KafkaTemplate<String, String>, 
             Cosnumer -@KafkaListener(topics = "NewTopic", 
