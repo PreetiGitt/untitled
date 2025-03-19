@@ -1,1 +1,5 @@
-
+@RestControllerAdvice
+Class {
+@ExceptionHandler(CustomException.class)
+     public ErrorResponse
+}
