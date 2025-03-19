@@ -1,3 +1,17 @@
+
+AOP (Aspect-Oriented Programming): A technique that allows you to inject cross-cutting concerns (such as logging) into your code without modifying it
+--------
+
+JPA Transaction propagation:
+1. REQUIRED is the default propagation. Spring checks if there is an active transaction, 
+and if nothing exists, it creates a new one. Otherwise, the business logic appends to the currently active transaction
+
+2. REQUIRED is the default propagation. Spring checks if there is an active transaction, 
+and if nothing exists, it creates a new one. Otherwise, the business logic appends to the currently active transaction
+
+3. When the propagation is MANDATORY, if there is an active transaction, then it will be used. 
+If there isn’t an active transaction, then Spring throws an exception:
+
 -- API Versioning- a transparent way for API changes
   URL based, header based , Query param based
 
