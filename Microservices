@@ -11,7 +11,7 @@ where a distributed transaction is fulfilled by a set of asynchronous transactio
 combines the results and responds to the initiating request.
 
 
-  4. Circuit breaker
+  4. Circuit breaker : hystrix
   4. Proxy design pattern : So, the main idea behind this pattern is, not to expose each microservice to their consumers and
 instead it should go through an interface.
 
