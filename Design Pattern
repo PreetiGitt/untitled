@@ -95,5 +95,6 @@
   3. Memento Design pattern: to save and restore the previous state
 
   4. Chain of Responsibility: implements loose-coulping and single responsibilty, define how a request pass thru a chain of objects
-
+    refer : https://medium.com/@ngneha090/beginners-guide-to-chain-responsibility-design-pattern-in-java-e1e0ddac2cb6
+     
   5. State Change: different behaviour as per state 
