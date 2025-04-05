@@ -1,2 +1,26 @@
 1.) Anagram : sort -> equals
 
+2.) Stock Buy-Sell: Max Profit: 
+     public int maxProfit(int[] prices) {
+        if (prices == null || prices.length == 0) {
+            return 0;
+        }
+
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+
+        for (int price : prices) {
+            if (price < minPrice) {
+                minPrice = price;
+            } else if (price - minPrice > maxProfit) {
+                maxProfit = price - minPrice;
+            }
+        }
+
+        return maxProfit;
+    }
+3.) Rotate Array
+ : left rotation-> reverse (arr,0, len-1), reverse(arr,0,k-1), reverse(arr,k,len-1)
+
+
+
