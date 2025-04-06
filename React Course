@@ -1,1 +1,4 @@
-Visual Studio, node JS, gitbash, postman
+1. Visual Studio, node JS, gitbash, postman
+2. Virtual DOM, diffing algo and reconciliation
+
+3. React compiler diffrentiates b/w Components(uppercase) and Tags (smallcase letters)
