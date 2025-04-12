@@ -2,3 +2,5 @@
 2. Virtual DOM, diffing algo and reconciliation
 
 3. React compiler diffrentiates b/w Components(uppercase) and Tags (smallcase letters)
+4. Function : can return
+   Class: can not return(Uses render), can define states using constructor
