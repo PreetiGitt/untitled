@@ -5,6 +5,7 @@
 4. Function : can return
    Class: can not return(Uses render), can define states using constructor
 
-Vite: works with .jsx , and folder structure is diff
+5.Vite: works with .jsx , and folder structure is diff
 
-<a/> vs <link/>: use <a> for linkks external to app eg :like facebook page
+6. <a/> vs <link/>: use <a> for linkks external to app eg :like facebook page
+7. index.js in a folder -> just import ./folder -> no need to give filename 
