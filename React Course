@@ -6,3 +6,5 @@
    Class: can not return(Uses render), can define states using constructor
 
 Vite: works with .jsx , and folder structure is diff
+
+<a/> vs <link/>: use <a> for linkks external to app eg :like facebook page
