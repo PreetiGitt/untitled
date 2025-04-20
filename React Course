@@ -9,3 +9,10 @@
 
 6. <a/> vs <link/>: use <a> for linkks external to app eg :like facebook page
 7. index.js in a folder -> just import ./folder -> no need to give filename 
+
+8. The sessionStorage object let you store key/value pairs in the browser.
+9. refer Npm website
+For react tabs : npm i react-tabs (within zomapp)
+for image slider : npm i react-slick --save 
+                  npm i slick-carousel
+10. ?.map(item) : optional, if data available then do this.
