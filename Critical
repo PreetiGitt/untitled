@@ -13,7 +13,17 @@ CompletableFuture: Provides methods like exceptionally and handle to deal with e
 Allows defining a recovery or fallback mechanism within the computation chain.
 -------
 AOP (Aspect-Oriented Programming): A technique that allows you to inject cross-cutting concerns (such as logging) into your code without modifying it
---------
+-----------
+How to JVM handles memory leaks:
+java handles it inetrnallly by GC but
+
+1. by enabling verbose garbage collection
+2. Eclipse gives memory leaks warnings
+3. code reviews
+4.A Java Profiler is a tool that monitors Java bytecode constructs and operations at the JVM level.
+
+
+-------------------------
 
 JPA Transaction propagation:
 1. REQUIRED is the default propagation. Spring checks if there is an active transaction, 
