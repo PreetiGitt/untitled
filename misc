@@ -1,0 +1,12 @@
+1. Immutable class and use case : for DTOs to transfer data unchanged, as a key in hashmap, config settings which need to be unchanged
+2. @Conditional : can override autoconfig in springboot, allows you to register beans conditionally
+    @ConditionalOnProperty: Checks for the presence and value of specific properties in the Spring environment.
+3. Composition over Inheritance : has-A gives more flexibilty and Avoid Fragile Base Class Problem: Changes in a superclass can break subclasses.
+4. Spring secuity:
+5. Spring bean lifecycle : initilaisation, depency injection, custonm init()-> ready
+6. Spring scaling: using spring cloud, load balancer
+7. How to save sensitive data: encryption, vault services
+8. Testing approach: unit-> slice-> integration
+9. Logging : log4j
+   Grafana (Open source, for smalller apps) vs splunk (enterprise level, can query the data)
+                          
