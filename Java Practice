@@ -13,6 +13,50 @@
             high=mid-1;  }
       
     }
+----------------Fibonacci----------
+// Recursive implementation of Fibonacci series 
+// program in Java
+import java.io.*;
+
+class Geeks
+{
+    // Function to print the fibonacci series
+    static int fib(int n)
+    {
+        // Base Case
+        if (n <= 1)
+            return n;
+
+        // Recursive call
+        return fib(n - 1) + fib(n - 2);
+    }
+
+    // Driver Code
+    public static void main(String args[])
+    {
+        // Given Number N
+        int N = 3;
+
+        // Print the first N numbers
+        for (int i = 0; i < N; i++) {
+
+            System.out.print(fib(i) + " ");
+        }
+    }
+}
+-------------Permuatations----------------
+  // Recursive method to generate permutations
+    public static void generatePermutations(String str, String prefix) {
+        if (str.length() == 0) {
+            System.out.println(prefix);
+        } else {
+            for (int i = 0; i < str.length(); i++) {
+                char ch = str.charAt(i);
+                String remaining = str.substring(0, i) + str.substring(i + 1);
+                generatePermutations(remaining, prefix + ch);
+            }
+        }
+    }
 
 ------------- Finding Frequncy---------
 List;
