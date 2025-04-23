@@ -1,10 +1,12 @@
 --------
 
 Future(Java 5): It is generally used with an ExecutorService, and we get a Future object when we submit tasks to the executor. 
-However, it doesn’t allow us to define any computation steps to be executed once the computation is finished. The get() method is blocking, which means it waits until the task is completed and can make the application less responsive.
+However, it doesn’t allow us to define any computation steps to be executed once the computation is finished. The get() method is blocking, 
+which means it waits until the task is completed and can make the application less responsive.
 
 CompletableFuture (Java 8): It can be used as a Future and 
-also allows us to attach callbacks via methods like thenApply, thenAccept, and thenRun. These methods let us execute additional actions upon completion of the original task, in a non-blocking fashion. CompletableFuture can also be manually completed.
+also allows us to attach callbacks via methods like thenApply, thenAccept, and thenRun. 
+These methods let us execute additional actions upon completion of the original task, in a non-blocking fashion. CompletableFuture can also be manually completed.
 
 Exception Handling
 Future: Does not provide a built-in mechanism for handling exceptions. Exception handling needs to be implemented externally. Exceptions are caught during the get() method call.
@@ -81,10 +83,6 @@ public DataSource dataSource2(){
 Note that I have @Bean(name="datasource1") and @Bean(name="datasource2"), 
 then you can use it when we need datasource as @Qualifier("datasource1") and @Qualifier("datasource2") ,    
 -----------------------------------------------
---Kafka
-   Consumer grp
-   Topic, Partition ,offset (like an index of partition)
-
 
 -- Rabbitmq
    Exchange -In RabbitMQ, an exchange is a message routing agent that determines how messages are sent to queues. 
