@@ -9,6 +9,16 @@ which may pass the state from previously processed elements to the processing of
 4. Parallel Streams
 --------
 Infinite Stream:
+ It is crucial to use a limit() method before executing a collect() method that is a terminal operation, otherwise our program will run indefinitely:
+
+// given
+Stream<Integer> infiniteStream = Stream.iterate(0, i -> i + 2);
+
+// when
+List<Integer> collect = infiniteStream
+  .limit(10)
+  .collect(Collectors.toList());
+
 ---------
 list.stream().sorted().collect(Collectors.toList())   //Asc
 list.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()) //Dsc
