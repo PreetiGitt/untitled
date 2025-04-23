@@ -1,1 +1,16 @@
-
+1.Kafka Hierarchy: Cluster, Broker, Topic , Partition
+•	Kafka broker arranges transactions between producers and consumers. Brokers handle all requests from clients to write and read events. 
+•	A Kafka cluster is simply a collection of one or more Kafka brokers.
+•	Topic : category of msgs
+•	Partition: parallelism and scalabilty
+2. Zookeeper : manages the clusters, elections (controller and topic leaders), topic configuration (maintaining a list of topics, how many partitions each has, etc.), storing metadata (such as the location of partitions)
+3. Min 3 brokers: 1 leader and 2 follwers
+     Kafka secures against data loss. This is accomplished through setting the topic replication factor, which specifies the number of copies of data over multiple brokers.
+4. In-Sync replica  (ISR): has potential to become leader if leader dies.
+5. ProducerRecord: created by producer depicting which topic and partions is being written ( a key-value pair).
+6. Consumer acknowledges the msg read and commits the offset -> so even if the Consumer dies, we have the offset tiil read.
+7.Kafka connect: to connect with external systems like splunk
+8. Consumer grp: for parallel reads and load division
+         1 consumer in each grp can read from exactly one partition
+         Kafka allows for multiple consumers to read from multiple topic partitions, increasing messaging throughput.
+9. Kafka Streams: Kafka Streams is a Java API for building streaming applications that can process and transform data inside Kafka topics. In a nutshell, Kafka Streams lets you read data in real time from a topic, process that data (such as by filtering, grouping, or aggregating it) and then write the resulting data into another topic or to other systems of record.
