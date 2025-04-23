@@ -1,3 +1,4 @@
+port :9092, tomcat : 8080,rabbit-5672
 1.Kafka Hierarchy: Cluster, Broker, Topic , Partition
 •	Kafka broker arranges transactions between producers and consumers. Brokers handle all requests from clients to write and read events. 
 •	A Kafka cluster is simply a collection of one or more Kafka brokers.
