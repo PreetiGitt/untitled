@@ -19,3 +19,13 @@ port :9092, tomcat : 8080,rabbit-5672
 9. Kafka Streams: Kafka Streams is a Java API for building streaming applications that can process and transform data inside Kafka topics. 
      In a nutshell, Kafka Streams lets you read data in real time from a topic, process that data (such as by filtering, grouping, or aggregating it) 
      and then write the resulting data into another topic or to other systems of record.
+
+
+
+
+---------------------RaabitMQ---
+● Exchange: Receives messages from producers and pushes them to queues depending on rules defined by the exchange type. A queue must be bound to at least one exchange to receive messages.
+
+● Binding: Bindings are rules that exchanges use (among other things) to route messages to queues.
+
+● Routing key: A key that the exchange uses to decide how to route the message to queues. Think of the routing key as an address for the message.
