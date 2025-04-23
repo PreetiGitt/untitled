@@ -12,6 +12,8 @@
 
 
 **SpringBoot starter dependencies- web, test , thymeleaf,JPA
+**The Spring Boot DevTools dependency enhances developer productivity by providing features such as automatic application restarts, 
+live reloading, and property overrides
 
 **StarterClass @SpringBootApplication- has main method which has run() which returns ApplicationContext type .which is used to create bean
 
