@@ -7,7 +7,9 @@ Copy Constructor-
 ------JDK 17 features---
 1. sealed classe
 2. randomnumber generator
-3. Switch case: enhnaced -> no need of btreak statements
+3. Switch case: enhnaced -> no need of btreak statements.
+   Type pattern
+    Guarded pattern
 4. Record Claaes :
     eg: public record Animal(String name, String animalType, long runningSpeed) {
 }
