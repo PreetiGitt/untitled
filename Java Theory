@@ -4,6 +4,14 @@ JDK11 feature:
 
 Copy Constructor-
 
+------JDK 17 features---
+1. sealed classe
+2. randomnumber generator
+3. Switch case: enhnaced -> no need of btreak statements
+4. Record Claaes :
+    eg: public record Animal(String name, String animalType, long runningSpeed) {
+}
+
 -------------------------------
 Immmutabilty in JAVA :
  1. Make your class final - 
