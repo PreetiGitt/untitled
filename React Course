@@ -25,5 +25,8 @@ for image slider : npm i react-slick --save
                    ComponetDidupdate (for state change))
       ->useparams: to get params from url
       ->useSearchParams: useSearchParams that allows you to access and manipulate the Query Params in the URL
+      ->useRef
 14. Promise: The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value
              with states like pending, fulfilled, rejected.
+15. SpreadOperator
+   The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object
