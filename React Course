@@ -32,3 +32,4 @@ for image slider : npm i react-slick --save
    The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object
 16. Debugging :
     Inspect-> sources-> control+P-> search the file-> click and put the breakpoint-> reload the page and click on play
+17: To host: dag n drop buid folder of react app on Netlify
