@@ -20,7 +20,7 @@ port :9092, tomcat : 8080,rabbit-5672
      In a nutshell, Kafka Streams lets you read data in real time from a topic, process that data (such as by filtering, grouping, or aggregating it) 
      and then write the resulting data into another topic or to other systems of record.
 
-
+10. Rate limit: 
 
 
 ---------------------RaabitMQ---
