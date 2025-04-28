@@ -35,3 +35,5 @@ for image slider : npm i react-slick --save
 16. Debugging :
     Inspect-> sources-> control+P-> search the file-> click and put the breakpoint-> reload the page and click on play
 17: To host: dag n drop buid folder of react app on Netlify
+
+18. GraphQL: to filter the required fields from API data : use Apllo Cilent
