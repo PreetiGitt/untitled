@@ -62,3 +62,9 @@ Integer var = list.stream().max(Integer::compare).get();
           .filter(n -> n % 2 == 0)
           .forEach(System.out::println);
 
+----------- frequency count
+ Map<Integer, Long> frequencyMap = Arrays.stream(arr)
+                .boxed() // Convert IntStream to Stream<Integer>
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+
