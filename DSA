@@ -51,5 +51,27 @@ public static void main(String[] args) {
 	
 
 }
---------------------
+--------------------Shift Odd-even (odd to left , even to right)--
+
+  public static void shiftOddEven(int[] arr) {
+        int left = 0, right = arr.length - 1;
+        while (left < right) {
+            // Increment left index if current number is odd
+            while (arr[left] % 2 != 0 && left < right) {
+                left++;
+            }
+
+            // Decrement right index if current number is even
+            while (arr[right] % 2 == 0 && left < right) {
+                right--;
+            }
+
+            // Swap even at left with odd at right
+            if (left < right) {
+                int temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+            }
+        }
+    }
 
