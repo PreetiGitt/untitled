@@ -47,3 +47,5 @@ Redux architecture: UI to action->dispatch-> store-> reducer-> UI
 npm i redux react-redux
 
 Services : will call api, will return type and payload
+
+21. Mern server : when we want single server for frontend and backend
