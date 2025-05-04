@@ -9,4 +9,10 @@
 8. Testing approach: unit-> slice-> integration
 9. Logging : log4j
    Grafana (Open source, for smalller apps) vs splunk (enterprise level, can query the data)
+8. @FeignClient: for inetr-service communication.
+       When a microservice wants to call another service’s API, developers often use HTTP clients or
+REST templates to make those calls.
+Although these are functional methods, they entail a lot of boilerplate code, making the codebase harder to maintain and understand.
+
+
                           
