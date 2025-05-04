@@ -45,6 +45,17 @@ list= empList.stream().filter(e->e.getSalary()>70000).sorted(Comparator.comparin
 
 Integer var = list.stream().max(Integer::compare).get(); 
 
+----- maxLength word
+ 
+     String maxString = Arrays.stream(s.split(" ")).max(Comparator.comparing(String::length)).get();
+
+----------Find the length of the longest word
+Solution : Arrays.stream(s.split(" ")).mapToInt(l -> l.length()).max().getAsInt();
+
+---- 2nd highest length word in the given sentence
+
+ Arrays.stream(s.split(" ")).map(l -> l.length()).sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+
 --------------- find duplicates
  list=  list.stream().filter(e-> !set.add(e)).collect(Collectors.toList())
 
