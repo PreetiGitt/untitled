@@ -13,6 +13,8 @@
        When a microservice wants to call another service’s API, developers often use HTTP clients or
 REST templates to make those calls.
 Although these are functional methods, they entail a lot of boilerplate code, making the codebase harder to maintain and understand.
+ The WebClient is Asynchronous and non blocking REST invoker.
+While the Feign client and RestTemplates creates a thread for each request and blocks it until it receives a response.
 
 
                           
