@@ -49,3 +49,6 @@ npm i redux react-redux
 Services : will call api, will return type and payload
 
 21. Mern server : when we want single server for frontend and backend
+22. React Native: expo go app on phone,
+      install some pkgs.
+      npm run web
