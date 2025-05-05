@@ -1,3 +1,13 @@
+Query Optimization:
+  1.using indexes,
+  2.avoiding query in loops
+  3.Avoid cartesian product, review the joins
+  4. Use where instaed of HAving
+   5. select instead of select *
+   6. Keep Wild cards at the End of Phrases
+  7. use Limits and offset
+  
+   
 -----
 1.cluster :
  like primary key, good for sorting and range queries eg: rollno in student table
