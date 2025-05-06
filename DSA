@@ -74,4 +74,39 @@ public static void main(String[] args) {
             }
         }
     }
+-------------------------sliding window maximum problem, which finds the maximum in each subarray (window) of size k.
+package practice;
+
+import java.util.*;
+
+public class Test {
+
+    static int maxElement(int[] arr, int i, int j) {
+        int max = Integer.MIN_VALUE; // Handles negative numbers
+
+        while (i <= j) { // Inclusive of j
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+            i++;
+        }
+        return max;
+    }
+
+    static List<Integer> maxList(int[] arr, int k) {
+        List<Integer> list = new ArrayList<>();
+
+        for (int start = 0; start <= arr.length - k; start++) {
+            int end = start + k - 1;
+            list.add(maxElement(arr, start, end));
+        }
+
+        return list;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 3, -1, -3, 5, 3, 6, 7 };
+        System.out.println(maxList(arr, 3));
+    }
+}
 
