@@ -1,0 +1,4 @@
+1. order of exceution: static method-> main-> constructor(if obj created)
+2. || (Or )-> if first condn is false, 2nd is ignored
+3.  Consatuctor overriding: Impossible, rather use super()
+4. 
