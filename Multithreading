@@ -1,1 +1,25 @@
+•	Thread Lifecycle: New , Runnable, waiting, timed_waiting, blocked
+•	Methods that stops the current thread: wait(), sleep(), join()
+                 Main (){
+                             T1.join(); // pauses main thread and t1 is executed.
+                                   } 
+
+Yield(): 
+•	Tells the thread scheduler: “I’m okay with pausing. Let someone else run.”
+•	But it's not guaranteed — the same thread might keep running.
+
+•	Extends Thread Class, override Run method Or Implement Runnable Interface
+•	Volatile Keyword- improves Visibilty- change made by one thread should be immediately visible to other , though it doesn’t ensure atomicity
+•	synchronised keyword-
+      -Instance methods,  Static methods & code blocks
+       - Ensures both visibility and atomicity- hard lock.
+
+•	Thread Pool: Fixed and cached
+1.	Fixed : fixed number of threads created irrespective of usage, It  will keep all the threads running until they are explicitly terminated
+2.	Cached: Creates a thread pool that creates new threads as needed, but will reuse previously constructed threads when they are available. Threads that have not been used for sixty seconds are terminated and removed from the cache
+
+
+•	Object level lock (instance method lock-synchronized) : one thread can access method of each instance at a time
+•	 class level lock (lock on static method) : one thread can access method of one instance at a time (even if there are 100 instances of class).
+•	 The InvalidMonitorStateException in Java is an exception that occurs when a thread attempts to perform an operation on a monitor (lock) that it is not allowed to,
 
