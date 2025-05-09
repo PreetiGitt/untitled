@@ -104,4 +104,30 @@ public class EmployeeServiceImplIntegrationTest {
 
     // remaining class code
 }
+------------------
+@ExtendWith(MockitoExtension.class)
+class UserControllerTest {
+
+    @InjectMocks
+    private UserController userController;
+
+    @Mock
+    private UserService userService;
+
+    @Test
+    void testGetUserById() {
+        // Arrange
+        User mockUser = new User(1, "Alice");
+        Mockito.when(userService.getUserById(1)).thenReturn(mockUser);
+
+        // Act
+        ResponseEntity<User> response = userController.getUserById(1);
+
+        // Assert
+        Assertions.assertEquals(HttpStatus.OK, response.getStatusCode());
+        Assertions.assertNotNull(response.getBody());
+        Assertions.assertEquals(1, response.getBody().getId());
+        Assertions.assertEquals("Alice", response.getBody().getName());
+    }
+}
 
