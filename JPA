@@ -1,4 +1,8 @@
 JPA vs Hibernate : hibernate is implementation of JPA
+•	@Table:This annotation is optional and provides more control over the table mapping.
+   It allows specifying the table name, schema, catalog, unique constraints, and indexes. 
+•	@Entity: mandatory for ORM mapping and persistence of object in DB
+
 
 Projections : 
   Spring Data JPA allows us to use projections to retrieve a subset of data from the database. 
