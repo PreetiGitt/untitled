@@ -21,7 +21,16 @@
     }
 3.) Rotate Array
  : left rotation-> reverse (arr,0, len-1), reverse(arr,0,k-1), reverse(arr,k,len-1)
+  : right-> reverse(arr,0,k-1), reverse(arr,k,len-1), reverse (arr,0, len-1)
 
+reverse(int[] arr, int start, int end) {
+	   while(start<end) {
+		   int temp=arr[start];
+		   arr[start]=arr[end];
+		   arr[end]=temp;
+		   start++;
+		   end--;
+	   }
 --------------- Longest Substring-------------
 //2 pointers -> start & end , start will update by sliding window- end normally move
 
