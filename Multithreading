@@ -16,10 +16,26 @@ Yield():
 
 •	Thread Pool: Fixed and cached
 1.	Fixed : fixed number of threads created irrespective of usage, It  will keep all the threads running until they are explicitly terminated
-2.	Cached: Creates a thread pool that creates new threads as needed, but will reuse previously constructed threads when they are available. Threads that have not been used for sixty seconds are terminated and removed from the cache
+2.	Cached: Creates a thread pool that creates new threads as needed, but will reuse previously constructed threads when they are available. 
+Threads that have not been used for sixty seconds are terminated and removed from the cache
 
-
+------------------------------------------
 •	Object level lock (instance method lock-synchronized) : one thread can access method of each instance at a time
 •	 class level lock (lock on static method) : one thread can access method of one instance at a time (even if there are 100 instances of class).
 •	 The InvalidMonitorStateException in Java is an exception that occurs when a thread attempts to perform an operation on a monitor (lock) that it is not allowed to,
+------------------------------
+•	ReentrantLock   givesFlexibility in Lock Management (lock() and unlock()): explicit : saves from deadlock.
+•	ReentrantLock provides the tryLock(time) method, enabling a thread to attempt to acquire the lock without waiting indefinitely. 
+•	synchronised vs Reentrant lock : behaviour is almost same.
+•	Synchronised: Lock and unlock is managed by JVM, can cause deadlock and infinte wait  for other threads.
+•	Reentrant:  has methods like .lock and unlock to release the lock.
+•	Synchronised : can not control the order of execution,
+•	Reentrant: can control by implementing fairness
+----------------------------------
+Runnable, Callable , Future:
+•	Void run() : neither has params , can nor return value
+•	V call () throws exception :Call() from callable can return a value 
+•	Future: stores result of asynchronous computation
+•	CompletableFuture: CompletableFuture enhances the capabilities of Future by providing a more powerful and flexible API for asynchronous programming. It enables non-blocking execution
+
 
