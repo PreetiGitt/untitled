@@ -16,5 +16,21 @@ Although these are functional methods, they entail a lot of boilerplate code, ma
  The WebClient is Asynchronous and non blocking REST invoker.
 While the Feign client and RestTemplates creates a thread for each request and blocks it until it receives a response.
 
+9. Fallback if an API doesnt get repsonse
+  @FeignClient(name = "other-service", fallback = OtherServiceFallback.class)
+public interface OtherServiceClient {     
+    @GetMapping("/api/data")
+    String getData();
+}
+  @Component
+public class OtherServiceFallback implements OtherServiceClient {
+    @Override
+    public String getData() {
+        return "Fallback: service unavailable";
+    }
+}
+
+
+
 
                           
