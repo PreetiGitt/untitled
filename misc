@@ -29,7 +29,9 @@ public class OtherServiceFallback implements OtherServiceClient {
         return "Fallback: service unavailable";
     }
 }
-
+----
+11. Spring Config sever : to export common configurations centrally 
+   put the file as "appName.yml" and provide git link of file in config server
 
 
 
