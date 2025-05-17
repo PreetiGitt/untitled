@@ -1,5 +1,6 @@
 Microservices:Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined API
         scalable, resilient, agile, resusable code, ease in deployment.
+-----------------
 **SpringConfig: is implemented in client-server model.
 
       1. For Server :create SpringConfig server with maven dependency : @EnableConfigServer
@@ -9,7 +10,7 @@ Microservices:Microservices are an architectural and organizational approach to 
             spring.application.name=config-client
             spring.profiles.active=development
             spring.config.import=optional:configserver:serverURL
-
+----------------------
 **SpringDiscovery: eureka
-
+-----------------------------
 **SpringAPIGateway: Spring Cloud, give predicates
