@@ -2,6 +2,8 @@ Microservices:Microservices are an architectural and organizational approach to 
         scalable, resilient, agile, resusable code, ease in deployment.
 -----------------
 **SpringConfig: is implemented in client-server model.
+ Spring Config sever : to export common configurations centrally 
+   put the file as "appName.yml" and provide git link of file in config server
 
       1. For Server :create SpringConfig server with maven dependency : @EnableConfigServer
                spring.cloud.config.server.git.uri=ssh://localhost/config-repo
