@@ -1,5 +1,7 @@
 --------------------Binary Search:
 
+Complexity: o(logn)
+
      int binarySearch(int [] arr, int toFind){
       int low=0, high= arr.length-1;
       while(low<high){
