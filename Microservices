@@ -1,5 +1,7 @@
 -----How Microservices communicate 
      1. RestTemplate
+     2. WebClient (non-blocking)
+     3. FeignClient (Single therad making an api call & exceuteing the API )
 
 
 -----------
@@ -50,9 +52,9 @@ Microservices:Microservices are an architectural and organizational approach to 
             spring.profiles.active=development
             spring.config.import=optional:configserver:serverURL
 
-**SpringDiscovery:
+**SpringDiscovery: eureka
 
-**SpringAPIGateway:
+**SpringAPIGateway: Spring Cloud, give predicates
 
 
 
