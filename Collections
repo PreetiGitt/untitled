@@ -1,0 +1,3 @@
+Hierarchy:
+    SQL -> set , Queue, List - Part of Collection Interface
+    Map-> inheriting from Map interface
