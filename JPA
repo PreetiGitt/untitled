@@ -34,10 +34,9 @@ public DataSource dataSource2(){
     return DataSourceBuilder.create().build();
 }
 Note that I have @Bean(name="datasource1") and @Bean(name="datasource2"), 
-then you can use it when we need datasource as @Qualifier("datasource1") and @Qualifier("datasource2") ,    
+then you can use it when we need datasource as @Qualifier("datasource1") and @Qualifier("datasource2") ,  
+
 -----------------------------------------------
-
-
 
 JPA vs Hibernate : hibernate is implementation of JPA
 •	@Table:This annotation is optional and provides more control over the table mapping.
