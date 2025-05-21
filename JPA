@@ -1,3 +1,12 @@
+Multiple DBs:
+   @Configuration
+@EnableJpaRepositories(
+    basePackages = "com.example.secondary.repository",                  // ← matches base pkg of repo configured for this DB
+    entityManagerFactoryRef = "secondaryEntityManagerFactory",         // ← custom EntityManager
+    transactionManagerRef = "secondaryTransactionManager"              // ← custom TxManager
+){
+
+
 JPA vs Hibernate : hibernate is implementation of JPA
 •	@Table:This annotation is optional and provides more control over the table mapping.
    It allows specifying the table name, schema, catalog, unique constraints, and indexes. 
