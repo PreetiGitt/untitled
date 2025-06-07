@@ -38,4 +38,10 @@ Runnable, Callable , Future:
 •	Future: stores result of asynchronous computation
 •	CompletableFuture: CompletableFuture enhances the capabilities of Future by providing a more powerful and flexible API for asynchronous programming. It enables non-blocking execution
 
+-----------------------------------------
+ThreadLocal:
+•	Java API – help to create variables that are local to individual thread.
+•	methods like get(), set(), remove(), withInitial()
+Eg: ThreadLocal<Integer> threadLocal = ThreadLocal.withInitial(() -> 1);
+•	Use Case: for session management, saving some userinfo etc.
 
