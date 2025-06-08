@@ -45,3 +45,8 @@ ThreadLocal:
 Eg: ThreadLocal<Integer> threadLocal = ThreadLocal.withInitial(() -> 1);
 •	Use Case: for session management, saving some userinfo etc.
 
+----------------------------------
+ Concurrent vs Synchronised Collections:
+   Cc: segment level locking, reads are generally lock-free.
+   Syn: entire collection is locked, blocking in nature.
+
