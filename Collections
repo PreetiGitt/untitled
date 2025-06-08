@@ -1,3 +1,12 @@
 Hierarchy:
     SQL -> set , Queue, List - Part of Collection Interface
     Map-> inheriting from Map interface
+----------------
+ HashMap Collision:
+•	Hashcode -> calculated on the basis of key 
+•	if same hashCode() -> check equals() if keys are same-> key is overwritten
+•	else if -> .equals() is false -> append new node at the tail of bucket.
+     
+------------------------------
+
+
