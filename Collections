@@ -9,4 +9,20 @@ Hierarchy:
      
 ------------------------------
 
+Fail-fast & Fail-safe Iterator :
+   Fail-fast gives ConcurrentModificationException while iteration edits
+        List<String> list = new ArrayList<>();
+        list.add("A");
+        list.add("B");
+
+        for (String item : list) {
+            System.out.println(item);
+            list.add("C"); // Structural modification while iterating-> ConcurrentModificationException
+       }
+
+🛡️ Fail-Safe Iterator
+    ->Does NOT throw ConcurrentModificationException if the collection is modified during iteration.
+    ->Iterates over a copy or uses a concurrent data structure.
+
+
 
