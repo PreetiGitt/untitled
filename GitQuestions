@@ -3,7 +3,8 @@ Git Merge : merge changes
 
 Git CheryPick: pick a specific commit from one branch to another, make sure you are on branch that wants to pick the commit. git cherrypick <commithash>
 
-fetch vs pull
+fetch vs pull:
+    pull=fetch+merge
 
 
 Git Rebase
