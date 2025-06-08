@@ -81,7 +81,24 @@ public DataSource dataSource2(){
     return DataSourceBuilder.create().build();
 }
 Note that I have @Bean(name="datasource1") and @Bean(name="datasource2"), 
-then you can use it when we need datasource as @Qualifier("datasource1") and @Qualifier("datasource2") ,    
+then you can use it when we need datasource as @Qualifier("datasource1") and @Qualifier("datasource2") ,   
+
+How JPA Repositories Know Which DB to Use
+Spring determines this via @EnableJpaRepositories annotation:
+
+java
+Copy
+Edit
+@Configuration
+@EnableJpaRepositories(
+    basePackages = "com.example.repo1", // package of repositories for DB1
+    entityManagerFactoryRef = "entityManagerFactory1",
+    transactionManagerRef = "transactionManager1"
+)
+public class Db1Config {
+    // datasource, entityManagerFactory, txManager beans for DB1
+}
+
 -----------------------------------------------
 
 -- Rabbitmq
