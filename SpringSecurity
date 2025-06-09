@@ -1,1 +1,17 @@
 
+•	JWT (JSON Web token): HPS (Header, Payload, Signature)
+•	How to secure JWT: 
+  1.	SSL
+  2.	Token Expiry
+  3.	Sign JWTs with Strong Secret or RSA Key
+
+----------
+0Auth: OAuth (specifically OAuth 2.0) is an authorization framework, not authentication. 
+It allows applications to access resources on behalf of a user without exposing the user’s credentials.
+
+o	Offloads complex authentication logic (passwords, MFA, login flows).
+o	Single Sign-On (SSO) support.
+o	Built-in token issuance, validation, and revocation.
+
+
+
