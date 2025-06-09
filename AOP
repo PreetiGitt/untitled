@@ -1,1 +1,15 @@
+•	@Aspect annotation is used as part of Spring AOP (Aspect-Oriented Programming). It defines a class as an aspect, which is a modularization of a concern that cuts across multiple classes—such as logging, security, or transaction management.
+•	@Aspect: Defines the class as an aspect.
+•	@Component: Makes the aspect a Spring-managed bean.
+
+-----Pointcut annotations:
+o	@Before: Executes before the target method.
+o	@After: Executes after the target method.
+o	@Around: Executes before and after the method.
+
+------ Point-Cut expression:
+•	execution(* package..Class.method(..)): Match method execution.
+•	within(package.Class): Match all methods in a specific class.
+•	@annotation(MyCustomAnnotation): Match methods with a specific annotation.
+
 
