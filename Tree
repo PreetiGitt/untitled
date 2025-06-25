@@ -1,0 +1,15 @@
+o	Red-Black Tree:
+     Binary Tree with self-balancing rules so that distance b/w root and leaf node is never more than twice of shortest path.
+Reduces complexity in insertion and deletion
+✅ Properties of Red-Black Tree
+1.	Every node is either red or black
+2.	Root is always black
+3.	Red nodes cannot have red children (no two red nodes in a row)
+4.	Every path from a node to its descendant null nodes must have the same number of black nodes (called black-height)
+5.	New insertions are red by default
+--------------------------------------
+o	Java TreeMap Implementation:
+  Utilizes Red-Black tree for self balancing
+   Keys are always sorted either in natural or custom order.
+o	Java Tree-Set:
+Also uses RB tree with uniue elements.
