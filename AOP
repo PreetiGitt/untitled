@@ -1,4 +1,5 @@
-•	@Aspect annotation is used as part of Spring AOP (Aspect-Oriented Programming). It defines a class as an aspect, which is a modularization of a concern that cuts across multiple classes—such as logging, security, or transaction management.
+•	@Aspect annotation is used as part of Spring AOP (Aspect-Oriented Programming). It defines a class as an aspect, 
+    which is a modularization of a concern that cuts across multiple classes—such as logging, security, or transaction management.
 •	@Aspect: Defines the class as an aspect.
 •	@Component: Makes the aspect a Spring-managed bean.
 
