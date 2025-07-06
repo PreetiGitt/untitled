@@ -1,3 +1,6 @@
+A REST service (REpresentational State Transfer) is a web service that follows REST architecture principles.
+It exposes resources over HTTP using stateless communication and works primarily with JSON or XML data formats.
+
 Api principles:
 1. Uniform Interface
 2. Client-Server
