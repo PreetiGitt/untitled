@@ -10,6 +10,12 @@ must contain all the information required in order to understand and complete th
 5. Cacheable: a response should implicitly or explicitly label itself as cacheable or non-cacheable.
 6 Code on Demand:Although this functionality is optional,
 REST also allows client functionality to extend by downloading and executing code in the form of applets or scripts.
+---------------------
+HATEOAS stands for:
+➡️ Hypermedia As The Engine Of Application State
+
+It is a constraint of the REST architecture, where a REST API response contains hyperlinks (links to related resources or actions).
+These links help the client navigate the API dynamically, without hard-coding URIs
 -------------------
 Richardson's maturity model:
 
