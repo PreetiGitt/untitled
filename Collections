@@ -6,6 +6,10 @@ Hierarchy:
 •	Hashcode -> calculated on the basis of key 
 •	if same hashCode() -> check equals() if keys are same-> key is overwritten
 •	else if -> .equals() is false -> append new node at the tail of bucket.
+
+  how get() works in collision: 
+       After collision linkedlist/tree is used to store the values.
+   for get(key) : hashcode(key) is same but list to traversed to match .equals(key)-> then value is returned.
      
 ------------------------------
 
