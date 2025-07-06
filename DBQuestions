@@ -7,8 +7,20 @@ Query Optimization:
    6. Keep Wild cards at the End of Phrases
   7. use Limits and offset
   
-   
------
+--------------
+how sql indexing can help with spring jpa
+ @Entity
+@Table(name = "users", indexes = {
+    @Index(name = "idx_email", columnList = "email"),
+    @Index(name = "idx_status_category", columnList = "status, category")
+})
+public class User {}
+
+  User findByEmail(String email);                // Uses email index
+List<User> findByStatusAndCategory(String s, String c); // Uses compound index
+
+
+----------
 1.cluster :
  like primary key, good for sorting and range queries eg: rollno in student table
 - can have only one clustered index in a table.
