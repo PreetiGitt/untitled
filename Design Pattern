@@ -99,4 +99,4 @@
     refer : https://medium.com/@ngneha090/beginners-guide-to-chain-responsibility-design-pattern-in-java-e1e0ddac2cb6
      
   5. State Change: different behaviour as per state 
-  6. Proxy design pattern : not allowing direct acccess to real object
+  6. Proxy design pattern : not allowing direct acccess to real object eg: API gateway
