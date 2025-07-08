@@ -1,0 +1,4 @@
+1. Create a Dockerfile at the root of project 
+2. OR use Spring-boot-maven-plugin : mvn spring-boot:build-image
+  
+3. Docker-Compose: lets you define and run multi-container Docker applications
