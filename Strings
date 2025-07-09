@@ -1,4 +1,10 @@
+-------
 String []arr=String.split()
 str.charAt(index)
 str.substring(left, right)
 str.substring(left) : left is always inclusive, right is exclusive
+--------
+String Comparison: list.stream()
+    .sorted(String::compareToIgnoreCase)
+    .forEach(System.out::println);
+
