@@ -1,0 +1,13 @@
+1. How does autoconfiguration works
+
+
+--------------------------------------
+2. How to reduce booting time for the app: 
+  -Lazy initialisation
+  -Profile-Based Config Loading: Use active profiles (spring.profiles.active) to load only what’s required.
+  - Reduce External Dependency Initialization:Delay connecting to databases, Kafka, etc., if not required at startup.
+  -Exclude auto-configurations in your @SpringBootApplication:
+     @SpringBootApplication(exclude = {SecurityAutoConfiguration.class, DataSourceAutoConfiguration.class})
+      public class MyApp { }
+  - Avoid scanning the entire pkg tree : @SpringBootApplication(scanBasePackages = {"com.example.service", "com.example.controller"})
+
