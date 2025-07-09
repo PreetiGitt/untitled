@@ -1,4 +1,7 @@
-1. How does autoconfiguration works
+1. How does autoconfiguration works:
+  automatically configuring beans based on the classpath, environment, and property files.
+  (pom dpenedencies)
+  @EnableAutoConfiguration: Triggers Spring Boot to scan for auto-config classes and load them conditionally.
 
 
 --------------------------------------
