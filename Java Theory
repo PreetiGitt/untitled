@@ -30,7 +30,9 @@ For the 4th point, say you have a Date field in your class, then the getter for 
 public Date getDate() {
     return new Date(this.date.getTime());
 }
-Making a defensive copy can become a headache, when your mutable field itself comprises of some mutable field, and that in turn can contain some other mutable field. In that case, you would need to make copy of each of them iteratively. We name this iterative copy of mutable fields as Deep Copy.
+Making a defensive copy can become a headache, when your mutable field itself comprises of some mutable field, and 
+that in turn can contain some other mutable field. In that case, you would need to make copy of each of them iteratively.
+We name this iterative copy of mutable fields as Deep Copy.
 
 Implementing deep copy by yourself may be cumbersome. But,keeping that issue apart, you should consider your class design again,
 ---------------------------------------
