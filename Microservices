@@ -11,6 +11,7 @@
 where a distributed transaction is fulfilled by a set of asynchronous transactions on related microservices
   3. Aggregator : Aggregator Design Pattern is a service that receives a request, then makes requests of multiple services,
 combines the results and responds to the initiating request.
+  eg: /getProductDetails: can have aggreaget of PriceService, ProductService, Inventory service etc.
 
 
   4. Circuit breaker : hystrix
