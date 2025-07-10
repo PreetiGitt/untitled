@@ -14,3 +14,9 @@
       public class MyApp { }
   - Avoid scanning the entire pkg tree : @SpringBootApplication(scanBasePackages = {"com.example.service", "com.example.controller"})
 
+----------------------
+3. How to scale the application:
+  -Horizontal Scaling: behind a loadbalancer (AWS platform)
+  -Vertical Scaling: temporaray soltuion (increasing CPU, memory allaocations), tomcat threads.
+  -DB scaling : connectio pool
+
