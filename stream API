@@ -81,4 +81,22 @@ Solution : Arrays.stream(s.split(" ")).mapToInt(l -> l.length()).max().getAsInt(
                 .boxed() // Convert IntStream to Stream<Integer>
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
+------------------------- Map traversal
+ Map<String, Integer> map = Map.of("apple", 3, "banana", 2, "orange", 5);
+
+map.entrySet().stream()
+    .forEach(entry -> {
+        System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+    });
+
+--Map Filter
+
+Map<String, Integer> filteredMap = map.entrySet().stream()
+    .filter(entry -> entry.getValue() > 2)
+    .collect(Collectors.toMap(
+        Map.Entry::getKey,
+        Map.Entry::getValue
+    ));
+
+
 
