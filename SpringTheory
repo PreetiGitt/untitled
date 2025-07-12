@@ -32,7 +32,7 @@ live reloading, and property overrides
         created bean in starter class as context.getBean(A.class);
    
   Types of DI: Constructor based, setters based, variable based
-
+-------------------------------------
 ** @RequestParam -   , for mutiple params, Can be optional too
     Default value it may take
     takes URL query params
@@ -41,7 +41,7 @@ live reloading, and property overrides
 ** @PathVariable
 @GetMapping("/users/{id}")
 public ResponseEntity<User> getUserById(@PathVariable("id") Long userId)
-
+-----------------------------------------------------
 ** @RestController= @controller+ @ResponseBody
 -------------------------
 ** Bean and its Scope:  A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container
