@@ -1,3 +1,20 @@
+---JDK 8
+Functional Programming :  meaning functions can be passed around just like variables — and 
+                         focus on writing pure, immutable, side-effect-free code.
+streams, Fnal Interface, lambda expression
+optional class
+Metaspace
+   | Feature           | PermGen (Java 7 and earlier)            | Metaspace (Java 8+)                           |
+| ----------------- | --------------------------------------- | --------------------------------------------- |
+| Stored where?     | JVM Heap                                | Native Memory (outside heap)                  |
+| Max size default? | Fixed and small (default \~64MB)        | Grows automatically by default                |
+| Customizable?     | Yes (`-XX:PermSize`, `-XX:MaxPermSize`) | Yes (`-XX:MaxMetaspaceSize`)                  |
+| OutOfMemoryError? | `PermGen space`                         | `Metaspace`                                   |
+| GC impact         | GC'd by full GC                         | Class metadata is GC'd when class is unloaded |
+
+
+
+------
 Java Compiler before and after Java9
  Java 9 provides option for modular compliation with script in Module-Info.java(in root directory)
 ------
