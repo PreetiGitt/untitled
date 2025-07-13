@@ -49,7 +49,14 @@ N+1 Query problem:
 Solution:
 1.Fetch only needed data using JPQL or native SQL projections
 2.@EntityGraph
-   
+  @EntityGraph is a JPA feature (used in Spring Data JPA) that helps you solve the N+1 problem and
+improve performance by eagerly fetching related entities in a single query—without explicitly writing a JOIN FETCH query
+
+ public interface OrderRepository extends JpaRepository<Order, Long> {
+
+    @EntityGraph(attributePaths = "customer")
+    List<Order> findAll();  // will fetch customer in the same query
+}
 
 
 
