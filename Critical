@@ -23,6 +23,9 @@ java handles it inetrnallly by GC but
 2. Eclipse gives memory leaks warnings
 3. code reviews
 4.A Java Profiler is a tool that monitors Java bytecode constructs and operations at the JVM level.
+----------------------
+The ApplicationContext in Spring Boot (and in general Spring) is the central interface for accessing the Spring IoC container.
+It manages the lifecycle and configurations of beans and provides dependency injection
 
 
 -------------------------
